@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid sistem</title>
+  <style>
+    body {
+      background-color: aqua;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 0.2rem;
+      grid-template-areas: 
+      "box1 box1 box1 box1"
+      "box2 box2 box3 box3"
+      "box4 box5 box6 box7";
+    }
+    .grid-item {
+      padding: 20px;
+      background-color: aliceblue;
+      text-align: center;
+    }
+    .item1 {
+      grid-area: box1;
+    }
+    .item2 {
+      grid-area: box2;
+    }
+    .item3 {
+      grid-area: box3;
+    }
+    .item4 {
+      grid-area: box4;
+    }
+    .item5 {
+      grid-area: box5;
+    }
+    .item6 {
+      grid-area: box6;
+    }
+    .item7 {
+      grid-area: box7;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .item2 {
+        grid-area: 2 / 1 / 2 / 5;
+      }
+      .item3 {
+        grid-area: 3 / 1 / 4 / 5;
+      }
+      .item4 {
+        grid-area: 4 / 1 / 5 / 3;
+      }
+      .item5 {
+        grid-area: 4 / 3 / 5 / 5;
+      }
+      .item6 {
+        grid-area: 5 / 1 / 6 / 3;
+      }
+      .item7 {
+        grid-area: 5 / 3 / 6 / 5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item item1">
+      <span>1</span>
+    </div>
+    <div class="grid-item item2">
+      <span>2</span>
+    </div>
+    <div class="grid-item item3">
+      <span>3</span>
+    </div>
+    <div class="grid-item item4">
+      <span>4</span>
+    </div>
+    <div class="grid-item item5">
+      <span>5</span>
+    </div>
+    <div class="grid-item item6">
+      <span>6</span>
+    </div>
+    <div class="grid-item item7">
+      <span>7</span>
+    </div>
+  </div>
+  
+</body>
+</html>
