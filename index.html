@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan uang</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="shortcut icon" href="assets/img/uang.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <button id="tops">TOP</button>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-nav-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">money</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menabung">Menabung</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col">
+                    <h2>kebijakan uang</h2>
+                    <p>Duit adalah benda yang digunakan sebagai alat pembayaran dalam transaksi jual beli. Duit telah menjadi bagian integral dari kehidupan manusia selama berabad-abad dan terus berkembang seiring waktu. </p>
+                    <a href="#tentang" class="btn btn-outline-warning rounded-pill">Next scroll</a>
+                </div>
+                <div class="col">
+                    <img src="assets/img/uang.png" alt="" class="image-rg-mobile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang">
+        <div class="container">
+            <div class="text-center">
+                <h4 class="title-judul">Tentang Uang</h4>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-center">
+                <div class="col col-md-5 col-lg-5">
+                    <img src="assets/img/uang.png" alt="uang?" class="image-uang">
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <p>Duit adalah benda yang digunakan sebagai media pembayaran untuk mempermudah transaksi jual beli. Duit biasanya berbentuk logam atau kertas dan memiliki nilai yang ditetapkan oleh pemerintah atau badan pengatur lainnya. Di beberapa negara, uang digital seperti cryptocurrency juga dianggap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menabung">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h4 class="title-judul">Tempat Menabung</h4>
+                <p class="text-small">berikut adalah rekomendasi tempat menabung di bank terpercaya</p>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/img/bank/bca.png" alt="bca">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/img/bank/bni.png" alt="bca">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/img/bank/BRI.png" alt="bca">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/img/bank/mandiri.png" alt="bca">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <img src="assets/img/bank/cimb_niaga.png" alt="bca">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/img/bank/permata.png" alt="bca">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var tops = document.getElementById("tops");
+      window.onscroll = () => {
+        punctu()
+      }
+      tops.addEventListener("click", () => {
+        document.body.dcrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      })
+      
+      function punctu(){
+        if (document.body.scrollTop  > 20 || document.documentElement.scrollTop > 20) {
+          tops.style.display = "block";
+        } else {
+          tops.style.display = "none";
+        }
+      }
+    </script>
+</body>
+</html>
